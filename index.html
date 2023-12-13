@@ -2,58 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Your Portfolio</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 <body>
-
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="#home" style="--i:1" class="active">Home</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#skills" style="--i:3">Skills</a>
+            <a href="#portfolio" style="--i:4">Portfolio</a>
+            <a href="#contact" style="--i:5">Contact</a>
         </nav>
     </header>
 
-    <section id="home">
-        <h1>Your Name</h1>
-        <p>Web Developer</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <img src="project1.jpg" alt="Project 1">
-            <h3>Project 1</h3>
-            <p>Description of Project 1.</p>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Hiruka Dinuth</h1>
+            <h3>And I'm a <span class="text"></span></h3>
+            <p>I'm a full stack developer with extensive experience of over 1 year.
+                <br> My expertise is in website designing, frontend design, and backend development.</p><br>
+               <div class="home-sci">
+                <!-- Facebook icon with link -->
+                <a href="#" style="--i:6" title="Facebook"><i class='bx bxl-facebook'></i></a>
+                
+                <!-- Instagram icon with link -->
+                <a href="#" style="--i:7" title="Instagram"><i class='bx bxl-instagram'></i></a>
+                
+                <!-- WhatsApp icon with link -->
+                <a href="#" style="--i:8" title="WhatsApp"><i class='bx bxl-whatsapp'></i></a>
+                
+                <!-- TikTok icon with link -->
+                <a href="#" style="--i:9" title="TikTok"><i class='bx bxl-tiktok'></i></a>
+            </div>
+            <a href="#about" class="btn-box">More about me</a>
         </div>
-        <div class="project">
-            <img src="project2.jpg" alt="Project 2">
-            <h3>Project 2</h3>
-            <p>Description of Project 2.</p>
+
+        <span class="home-imgHover"></span>
+    </section>
+    
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="backgroundImage.jpg" alt="About Me Image">
         </div>
-        <!-- Add more projects as needed -->
+        <div class="about-text">
+            <h2>About<span>Me</span></h2>
+            <h4>Full stack Developer!</h4>
+            <p>Passionate about leveraging technology to create innovative solutions, I am a seasoned Full Stack Developer with a deep understanding of the entire software development lifecycle. My expertise spans both front-end and back-end development, enabling me to craft seamless, user-centric applications.</p>
+            <a href="#about" class="btn-box">More about Me</a>
+        </div>
     </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
+    <section>
+        <div class="services" id="services">
+            <div class="container">
+                <h1 class="sub-title">My<span>services</span></h1>
+                <div class="services-list">
+                    <div>
+                        <i class='bx bx-code' style='color:#00eeff'></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ad deleniti beatae nihil nisi accusantium distinctio natus suscipit provident, praesentium atque laudantium, sapiente exercitationem culpa totam magnam laborum voluptatibus reiciendis!</p>
+                        <a href="#" class="read">Learn more</a>
+                    </div>
+    
+                    <div>
+                        <i class='bx bx-crop' style='color:#00eeff'></i>
+                        <h2>Web Development</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ad deleniti beatae nihil nisi accusantium distinctio natus suscipit provident, praesentium atque laudantium, sapiente exercitationem culpa totam magnam laborum voluptatibus reiciendis!</p>
+                        <a href="#" class="read">Learn more</a>
+                    </div>
+    
+                    <div>
+                        <i class='bx bxl-apple' style='color:#00eeff'></i>
+                        <h2>Mobile App Development</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ad deleniti beatae nihil nisi accusantium distinctio natus suscipit provident, praesentium atque laudantium, sapiente exercitationem culpa totam magnam laborum voluptatibus reiciendis!</p>
+                        <a href="#" class="read">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    
 
-    <script src="script.js"></script>
+    <!-- Add more sections as needed -->
+
 </body>
 </html>
